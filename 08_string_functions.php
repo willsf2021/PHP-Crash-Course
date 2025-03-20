@@ -59,11 +59,16 @@ if (str_ends_with($string, 'ld')) {
 echo "<br><br>";
 // HTML Entities
 $string2 = '<h1>Hello World</h1>';
-echo htmlentities($string2);
+
+echo $string2; 
+// Gonna show like HTML
+echo htmlentities($string2); 
+// Gonna show like that: 
+//'<h1>Hello World </h1>', literally
 
 echo "<br><br>";
 // Formatted Strings - useful when you have outside data
 // Different specifiers for different data types
-printf('%s is a %s', 'Brad', 'nice guy');
+printf('%s is a %s', 'Brad', 'nice guy'); //<= Like C Language; specificators
 echo "<br><br>";
 printf('1 + 1 = %f', 1 + 1); // float
